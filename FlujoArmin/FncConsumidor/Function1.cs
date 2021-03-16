@@ -8,7 +8,7 @@ namespace FncConsumidor
     public static class Function1
     {
         [FunctionName("Function1")]
-        public static void Run([ServiceBusTrigger("cola1", Connection = "Endpoint=sb://queuesarah.servicebus.windows.net/;SharedAccessKeyName=Escuchar;SharedAccessKey=KLt9cV2XXXMJUVbDSV+21pN9BG6OG/ROYH9mU5CsHfU=;EntityPath=cola1")]string myQueueItem, ILogger log)
+        public static void Run([ServiceBusTrigger("cola1", Connection = "MyConn")]string myQueueItem, ILogger log)
         {
             log.LogInformation($"C# ServiceBus queue trigger function processed message: {myQueueItem}");
         }
