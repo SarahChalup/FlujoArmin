@@ -1,5 +1,4 @@
-﻿
-namespace APIProductor.Models
+﻿namespace FncConsumidor.Models
 {
     using System;
     using System.ComponentModel.DataAnnotations;
@@ -10,7 +9,7 @@ namespace APIProductor.Models
         public String NameDevice { get; set; }
         [DataType(DataType.DateTime)]
         [Required]
-        public DateTime EventDate{ get; set; }
+        public DateTime EventDate { get; set; }
         [Required]
         public String Event { get; set; }
 
